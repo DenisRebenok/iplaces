@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @place.name
+%p
+  %b Address:
+  = @place.address
+%p
+  %b Description:
+  = @place.description
+%p
+  %b Phone:
+  = @place.phone
+%p
+  %b Website:
+  = @place.website
+%p
+  %b User:
+  = @place.user_id
+
+= link_to 'Edit', edit_place_path(@place)
+\|
+= link_to 'Back', places_path
